@@ -1,0 +1,25 @@
+
+/** Handles placement of our custom navbar icons **/
+@mixin navbar-icon($icon, $width, $height) {
+	$path: '../images/theme/' + $icon + '.png';
+	background: url($path) no-repeat scroll 0 0 transparent;
+	width: $width;
+	height: $height;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@mixin set-font($font, $size) {
+	font-family: $font;
+	font-size: $size;
+}
+
+@mixin set-font-c($font, $size, $color) {
+	@include set-font($font, $size);
+	color: $color;
+}
+
+@mixin grayscale($percentage) {
+	-webkit-filter: grayscale($percentage); /* Safari */
+	filter: grayscale($percentage);
+}

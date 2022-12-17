@@ -1,0 +1,104 @@
+@import 'mixins';
+@import 'product_layout';
+
+$color_primary: #3a404d;
+$color_secondary: #00baa2;
+$color_secondary_hover: #1bc1ab;
+
+$heading_primary: #757f90;
+$heading_secondary: #a3acbb;
+
+$arial_family: Arial, Helvetica, sans-serif;
+$roboto_family: 'Roboto', sans-serif;
+$verdana_family: Verdana,Geneva,sans-serif;
+
+section#footer {
+	background-color: #ececec;
+	padding: 50px 0 0 0 !important;
+	line-height: 25px;
+	border-top: 1px solid #d8d8d8;
+
+	span {
+		@include set-font-c($verdana_family, 13px, $heading_secondary);
+		line-height: 25px;
+		padding-left: 20px;
+		display: block;
+		> img {
+			margin-bottom: 15px;
+			display: block;
+		}
+	}
+
+	span.desc > a {
+		color: $color_secondary;
+	}
+
+	.footnav {
+		h6 {
+			@include set-font-c($roboto_family, 16px, #7c8490);
+			text-transform: uppercase;
+			margin-top: 0;
+		}
+		> .row {
+			margin: 0;
+			> div:last-child {
+				padding-right: 0;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				padding: 2px 0;
+				> a {
+					@include set-font-c($verdana_family, 13px, $heading_secondary);
+					text-decoration: none;
+					&:hover {
+						color: #3abaa9;
+					}
+				}
+
+			}
+		}
+	}
+
+	.legal {
+		margin-top: 20px;
+		text-align: center;
+		> a {
+			@include set-font-c($verdana_family, 13px, $heading_secondary);
+			padding: 0 10px;
+			text-decoration: none;
+			&:hover {
+				color: $color_secondary;
+			}
+		}
+	}
+
+	> #social {
+		margin-top: 25px;
+		background-color: #e2e2e2;
+		border-top: 1px solid #d8d8d8;
+		text-align: center;
+		padding: 30px 0;
+		a {
+			&:not(:first-child) {
+				margin-left: 7px;
+			}
+			> img {
+				@include grayscale(100%);
+
+			}
+			&:hover > img {
+				@include grayscale(0%);
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.footnav {
+		display: none;
+	}
+
+}

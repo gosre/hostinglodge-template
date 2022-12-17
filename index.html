@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+    <title>HostingLodge</title>
+    <meta name="description" content="Reliable and cheap website hosting & services">
+    <meta name="keywords" content="hostinglodge,ssd,web-hosting,cheap,website,hosting">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" /><!-- Dotted Outline fix -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="./assets/style/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./assets/style/hostinglodge_main.css" rel="stylesheet" />
+    <link href="./assets/style/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <div class="container brand">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="./"><img class="logo" src="assets/images/theme/logo.png" /></a>
+                </div>
+                <div class="col-md-7">
+                    <div id="session_nav">
+                        <a class="button btn-medium client-btn" href="#"><span class="padlock">Client Area</span></a>
+                        <a class="button btn-small cart-btn" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 0</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav text-md-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="domains_dropdown" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <ci class="domains"></ci>Domains
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="domains_dropdown">
+                                <a class="dropdown-item" href="#">Domain Name
+                                    Search</a>
+                                <a class="dropdown-item" href="#">Transfer to
+                                    us</a>
+                                <a class="dropdown-item" href="#">Available
+                                    TLD's</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servers_dropdown" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <ci class="server"></ci>Hosting/Servers
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="servers_dropdown">
+                                <a class="dropdown-item" href="#">Shared SSD Hosting</a>
+                            </div>
+                        </li>
+                        <li class="nav-item apps">
+                            <a class="nav-link" href="#">
+                                <ci class="app"></ci>Apps
+                            </a>
+                        </li>
+                        <li class="nav-item sec">
+                            <a class="nav-link" href="#">
+                                <ci class="security"></ci>Security
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ci class="account"></ci>Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="announce ui-widget-content">
+            <div class="container">We don't currently offer APP or SSL services, but they'll be coming shortly!
+                Subscribe below for updates on future products and promotions.</div>
+        </div>
+    </header>
+    <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">E-mail Subscription</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank you! We have recorded your e-mail address in our mailing system.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="domain_jumbo">
+        <div class="container">
+            <a class="slide" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            <div class="row row-product-selection">
+                <div class="col-md-12 justify-content-md-center">
+                    <div id="order-premium_comparison">
+                        <div class="main-container price-01">
+                            <div id="products" class="price-table-container">
+                                <ul>
+                                    <li id="product1">
+                                        <div class="price-table">
+                                            <div class="top-head">
+                                                <div class="top-area">
+                                                    <h4 id="product1-name">SSD Starter</h4>
+                                                </div>
+                                                <div class="price-area">
+                                                    <div class="price" id="product1-price">
+                                                        <span>$1.99</span>/mo
+                                                        <br>
+                                                    </div>
+                                                    <a href="#" class="order-button"
+                                                        id="product1-order-button">
+                                                        Order Now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li id="product1-description">
+                                                    ✔ <b>3GB</b> SSD Disk<br>
+                                                    <br><br>
+                                                    ✔ <b>100GB</b> Bandwidth<br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li id="product2" class="featured">
+                                        <div class="price-table">
+                                            <div class="top-head">
+                                                <div class="top-area">
+                                                    <h4 id="product2-name">SSD Economy</h4>
+                                                </div>
+                                                <div class="price-area">
+                                                    <div class="price" id="product2-price">
+                                                        <span>$4.99</span>/mo
+                                                        <br>
+                                                    </div>
+                                                    <a href="#" class="order-button"
+                                                        id="product2-order-button">
+                                                        Order Now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li id="product2-description">
+                                                    ✔ <b>10GB</b> SSD Disk<br>
+                                                    <br><br>
+                                                    ✔ <b>Unlimited</b> Bandwidth<br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li id="product3">
+                                        <div class="price-table">
+                                            <div class="top-head">
+                                                <div class="top-area">
+                                                    <h4 id="product3-name">SSD Premium</h4>
+                                                </div>
+                                                <div class="price-area">
+                                                    <div class="price" id="product3-price">
+                                                        <span>$8.99</span>/mo
+                                                        <br>
+                                                    </div>
+                                                    <a href="#" class="order-button"
+                                                        id="product3-order-button">
+                                                        Order Now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li id="product3-description">
+                                                    ✔ <b>25GB</b> SSD Disk<br>
+                                                    <br><br>
+                                                    ✔ <b>Unlimited</b> Bandwidth<br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a class="slide" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-6 col-md-3">
+                    <img src="assets/images/icons/shared_servers.png" />
+                    <h1>Web Hosting</h1>
+                    <h2>From $1.99/month</h2>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="assets/images/icons/domains.png" />
+                    <h1>Domains</h1>
+                    <h2>.com starting at $8.99/year</h2>
+                </div>
+                <div class="col-6 col-md-3 coming-soon">
+                    <img src="assets/images/icons/vps.png" />
+                    <h1>VPS</h1>
+                    <h2>Coming Soon</h2>
+                </div>
+                <div class="col-6 col-md-3 coming-soon">
+                    <img src="assets/images/icons/dedicated.png" />
+                    <h1>Dedicated Servers</h1>
+                    <h2>Coming Soon</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="featured-services">
+        <div class="container">
+            <h1>Why choose us?</h1>
+            <h2>Find out why over 1,000 other people have chosen us</h2>
+            <div class="row align-items-end">
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/performance.png" />
+                        <h3>Performance</h3>
+                        <span>Unbeatable speed and performance around the clock, enabling you to get to work and reach
+                            your full potential.</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/ftp.png" />
+                        <h3>FTP</h3>
+                        <span>Built in FTP management - Work remotely and control who gets access to your files.</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/cog.png" />
+                        <h3>Control Panel</h3>
+                        <span>All of our hosting packages come with the latest installment of cPanel. View the cPanel
+                            feature list <a
+                                href="https://documentation.cpanel.net/display/ALD/cPanel+Features+List">here</a>.</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/setup.png" />
+                        <h3>Setup Time</h3>
+                        <span>All hosting plans and domains are setup and squared away within minutes of
+                            purchase.</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/security.png" />
+                        <h3>Security & DDoS Mitigation</h3>
+                        <span>Highly secure servers with included DDoS mitigation solutions to protect you from attacks;
+                            all free of charge.</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="feature">
+                        <img src="assets/images/icons/sql.png" />
+                        <h3>MySQL Databases</h3>
+                        <span>Ability to create and manage local or remote MySQL databases at ease.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="news">
+        <div class="container">
+            <h1>Company News</h1>
+            <h2>Announcements covering company news, updates, products, and promotions.</h2>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-4">
+                    <div class="post">
+                        <img src="assets/images/test.png"/>
+                        <h3>Example Article</h3>
+                        <a class="button btn-small" href="#">Read Article</a>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4">
+                    <div class="post">
+                        <img src="assets/images/test2.png"/>
+                        <h3>Example Article</h3>
+                        <a class="button btn-small" href="#">Read Article</a>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4">
+                    <div class="post">
+                        <img src="assets/images/test3.png"/>
+                        <h3>Example Article</h3>
+                        <a class="button btn-small" href="#">Read Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="subscribe">
+        <div class="return"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email here">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Subscribe</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <h1>Get offers, deals, tips, and more delivered straight to your e-mail!</h1>
+        </div>
+    </div>
+    <div id="sponsors">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="assets/images/partners/dnb.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/partners/cpanel.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/partners/namecheap.png" />
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/partners/ovh.png" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-md-1 order-12">
+                    <span class="desc">
+                        <img src="assets/images/theme/whitelogo.png" />
+
+                        HostingLodge is dedicated to giving our customers a worry-free and reliable service, no matter
+                        the cost. We cater to each customer as if they were our only customer. Have a question? Need
+                        help? Open a <a href="#">support ticket</a>.
+                        <br><br>
+                        &copy; 2016-2022 HostingLodge, LLC.
+                        <br>
+                        Registered in Maryland, USA
+                    </span>
+                </div>
+                <div class="col-12 col-md-6 order-md-2 order-1 ml-md-auto footnav">
+                    <div class="row justify-content-end">
+                        <div class="col-6 col-md-4">
+                            <ul>
+                                <h6>Products</h6>
+                                <li><a href="#">Domains</a></li>
+                                <li><a href="#">Shared Hosting</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <ul>
+                                <h6>Resources</h6>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Technical Support</a></li>
+                                <li><a href="#">Knowledgebase</a></li>
+                                <li><a href="#">Network Status</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <ul>
+                                <h6>Company</h6>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legal">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+        <div id="social">
+            <div class="container">
+                <a href="#"><img src="assets/images/icons/youtube.png" /></a>
+                <a href="#"><img src="assets/images/icons/twitter.png" /></a>
+                <a href="#"><img src="assets/images/icons/linkedin.png" /></a>
+                <a href="#"><img src="assets/images/icons/googleplus.png" /></a>
+                <a target="_BLANK" href="#"><img src="assets/images/icons/facebook.png" /></a>
+            </div>
+        </div>
+    </section>
+    <!-- Core Javascript -->
+    <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/bootstrap/popper.min.js"></script>
+    <!-- needed for bootstrap dropdowns....? -->
+    <script type="text/javascript" src="./assets/scripts/bootstrap/bootstrap.min.js?t=1"></script>
+    <!-- Bootstrap after jQuery -->
+    <script>
+        $(document).ready(function (e) {
+            $(".nav-item.apps, .nav-item.sec").click(function (e) {
+                e.preventDefault();
+                $(".announce").show('blind', { direction: "up" }, 300);
+            });
+
+            $("#subscribe button").click(function (e) {
+                $('#subscribe-modal').modal('toggle');
+
+            });
+        });
+    </script>
+</body>
