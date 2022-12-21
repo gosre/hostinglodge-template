@@ -1,30 +1,5 @@
-$background-2: #3a404d;
-$background-1: #505b6e;
-
-$background-3: #00baa2;
-$background-4: #00977f;
-
-$background-5: #00cfb6;
-
 $borders: #323845;
 $borders-secondary: #454c5b;
-
-@mixin set-background($background1, $background2) {
-	/* Old browsers */
-	background: $background1;
-	/* FF3.6+ */
-	background: -moz-linear-gradient(top, $background1 0%, $background2 100%);
-	/* Chrome,Safari4+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $background1), color-stop(100%,$background2));
-	/* Chrome10+,Safari5.1+ */
-	background: -webkit-linear-gradient(top, $background1 0%,$background2 100%);
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(top,  $background1 0%,$background2 100%);
-	/* IE10+ */
-	background: -ms-linear-gradient(top,  $background1 0%,$background2 100%);
-	/* W3C */
-	background: linear-gradient(to bottom, $background1 0%,$background2 100%);
-}
 
 div#order-premium_comparison {
 	padding:0 0 0 0;

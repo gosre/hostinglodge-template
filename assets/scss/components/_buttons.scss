@@ -1,0 +1,69 @@
+a {
+	color: $color_secondary;
+	&:hover {
+		color: $color_primary;
+		text-decoration: none;
+	}
+}
+
+a, a:focus, a:active {
+	outline: none !important;
+}
+
+.btn.focus,
+.btn:focus {
+	box-shadow: none;
+}
+
+button.btn-secondary {
+	@include set-font($arial_family, 14px);
+	font-weight: bold;
+	padding: 12px 40px;
+	background-color: $color_secondary;
+	border-color: $color_secondary;
+	&:hover {
+		background-color: #0ed1b8;
+		border-color: #0ed1b8;
+		cursor: pointer;
+	}
+}
+
+a.button {
+	padding: 9px 40px;
+	color: #FFF;
+	background-color: #FFF;
+	text-decoration: none;
+	border-radius: 3px;
+	font-family: $arial_family;
+	font-size: 14px;
+	font-weight: bold;
+	&.btn-medium {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	&.btn-small {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&.client-btn {
+		border: 1px solid;
+		border-color: #656e7f #505b6e #505b6e #505b6e;
+		background-color: #505b6e;
+		padding-left: 30px;
+		padding-right: 30px;
+		&:hover {
+			background-color: #5e6a7e;
+			border-color: #717989 #5e6a7e #5e6a7e #5e6a7e;
+		}
+	}
+	&.cart-btn {
+		background-color: #3a404d;
+		border: 1px solid #5b6372;
+		color: #788192;
+		margin-left: 7px;
+		&:hover {
+			color: #FFF;
+			border-color: #717989;
+		}
+	}
+}

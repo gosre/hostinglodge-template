@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <head>
     <title>HostingLodge</title>
     <meta name="description" content="Reliable and cheap website hosting & services">
@@ -8,10 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" /><!-- Dotted Outline fix -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="./assets/style/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="./assets/style/hostinglodge_main.css" rel="stylesheet" />
-    <link href="./assets/style/font-awesome/font-awesome.min.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="/assets/scss/hostinglodge_main.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="/assets/scripts/jquery-3.2.1.min.js" defer></script>
+    <script type="text/javascript" src="/assets/scripts/jquery-ui.min.js" defer></script>
+    <script type="text/javascript" src="/assets/scripts/bootstrap/popper.min.js" defer></script>
+    <script type="text/javascript" src="/assets/scripts/bootstrap/bootstrap.min.js?t=1" defer></script>
+    <script type="text/javascript" src="/assets/scripts/core.js" defer></script>
 </head>
 <body>
     <header>
@@ -104,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div id="domain_jumbo">
+    <div id="hosting_jumbo">
         <div class="container">
             <a class="slide" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
             <div class="row row-product-selection">
@@ -315,7 +320,7 @@
     </div>
 
     <div id="subscribe">
-        <div class="return"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+        <div id="return"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9">
@@ -397,7 +402,7 @@
                     </div>
                 </div>
             </div>
-            <div class="legal">
+            <div id="legal">
                 <a href="#">Terms of Service</a>
                 <a href="#">Privacy</a>
             </div>
@@ -412,24 +417,4 @@
             </div>
         </div>
     </section>
-    <!-- Core Javascript -->
-    <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./assets/scripts/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./assets/scripts/bootstrap/popper.min.js"></script>
-    <!-- needed for bootstrap dropdowns....? -->
-    <script type="text/javascript" src="./assets/scripts/bootstrap/bootstrap.min.js?t=1"></script>
-    <!-- Bootstrap after jQuery -->
-    <script>
-        $(document).ready(function (e) {
-            $(".nav-item.apps, .nav-item.sec").click(function (e) {
-                e.preventDefault();
-                $(".announce").show('blind', { direction: "up" }, 300);
-            });
-
-            $("#subscribe button").click(function (e) {
-                $('#subscribe-modal').modal('toggle');
-
-            });
-        });
-    </script>
 </body>
