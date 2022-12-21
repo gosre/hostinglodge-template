@@ -964,6 +964,29 @@ html, body {
     min-height: 270px;
   }
 }
+body#error-404 {
+  background-color: #3a404d;
+}
+body#error-404 > img {
+  margin: 50px auto 5px auto;
+  display: block;
+}
+body#error-404 > h1 {
+  margin: 0;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  text-align: center;
+}
+body#error-404 > a {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+
 body {
   padding: 0px !important;
   margin: 0px !important;
