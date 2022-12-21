@@ -931,15 +931,14 @@ html, body {
   display: block;
 }
 
-/** return carat up page **/
-.return {
+#return {
   width: 65px;
   height: 65px;
   background-color: #00baa2;
   border-radius: 50px;
   margin: -100px auto 40px auto;
 }
-.return > .fa {
+#return > .fa {
   font-size: 36px;
   color: #FFF;
   text-align: center;
@@ -947,7 +946,7 @@ html, body {
   padding: 10px 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.return:hover {
+#return:hover {
   cursor: pointer;
   background-color: #0ed1b8;
 }

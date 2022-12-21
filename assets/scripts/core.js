@@ -6,6 +6,9 @@ $(document).ready(function (e) {
 
     $("#subscribe button").click(function (e) {
         $('#subscribe-modal').modal('toggle');
+    });
 
+    $("#return").click(function() {
+        $("html,body").animate({scrollTop: 0}, 500);
     });
 });
