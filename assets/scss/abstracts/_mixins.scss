@@ -1,0 +1,41 @@
+/** Handles placement of our custom navbar icons **/
+@mixin navbar-icon($icon, $width, $height) {
+	$path: '../images/theme/' + $icon + '.png';
+	background: url($path) no-repeat scroll 0 0 transparent;
+	width: $width;
+	height: $height;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@mixin set-font($font, $size) {
+	font-family: $font;
+	font-size: $size;
+}
+
+@mixin set-font-c($font, $size, $color) {
+	@include set-font($font, $size);
+	color: $color;
+}
+
+@mixin grayscale($percentage) {
+	-webkit-filter: grayscale($percentage); /* Safari */
+	filter: grayscale($percentage);
+}
+
+@mixin set-background($background1, $background2) {
+	/* Old browsers */
+	background: $background1;
+	/* FF3.6+ */
+	background: -moz-linear-gradient(top, $background1 0%, $background2 100%);
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $background1), color-stop(100%,$background2));
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top, $background1 0%,$background2 100%);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top,  $background1 0%,$background2 100%);
+	/* IE10+ */
+	background: -ms-linear-gradient(top,  $background1 0%,$background2 100%);
+	/* W3C */
+	background: linear-gradient(to bottom, $background1 0%,$background2 100%);
+}
