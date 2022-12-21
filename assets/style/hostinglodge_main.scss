@@ -201,12 +201,13 @@ header {
 				font-weight: normal;
 				text-align: center;
 				padding: 10px 0;
-				&:nth-of-type(2n + 1) {
+				&:nth-of-type(2n + 1), &:active {
 					background-color: #f3f3f3;
 				}
 				&:hover {
 					color: $color_secondary;
 				}
+			
 			}
 		}
 	}
@@ -470,20 +471,13 @@ header {
 
 	#domain_jumbo {
 
-		//overflow: hidden;
 		#products > ul > li:not(.featured) {
 			display: none;
-			//float: left;
-		//	display: inherit;
 		}
 
 		.slide {
 			display: block !important;
 		}
-		//padding: 65px 0;
-		//.search-text {
-		//	display: none;
-		//}
 	}
 
 	#services, #sponsors {

@@ -94,7 +94,7 @@ div#order-premium_comparison {
   padding: 5px 10px 5px 10px;
   margin: 0 0 0 0;
   display: inline-block;
-  background: url("/assets/images/products/shadow-btm.png") no-repeat center bottom;
+  background: url("../images/products/shadow-btm.png") no-repeat center bottom;
 }
 
 #order-premium_comparison .price-table-container .price-table {
@@ -402,18 +402,18 @@ section#footer .footnav ul li > a {
 section#footer .footnav ul li > a:hover {
   color: #3abaa9;
 }
-section#footer .legal {
+section#footer #legal {
   margin-top: 20px;
   text-align: center;
 }
-section#footer .legal > a {
+section#footer #legal > a {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 13px;
   color: #a3acbb;
   padding: 0 10px;
   text-decoration: none;
 }
-section#footer .legal > a:hover {
+section#footer #legal > a:hover {
   color: #00baa2;
 }
 section#footer > #social {
